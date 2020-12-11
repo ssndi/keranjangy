@@ -6,7 +6,7 @@
 // @author       血莲
 // @match        *://*.shopee.co.id/*
 // @match        *://*.shopee.co.id/*
-// @match        *://chaoshi.detail.shopee.co.id/*
+// @match        *://chaoshi.shopee.co.id/*
 // @match        *://*.shopee.id/*
 // @match        *://*.shopee.co.id/*
 // @exclude       *://login.shopee.co.id/*
