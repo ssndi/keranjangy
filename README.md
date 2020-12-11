@@ -1,3 +1,6 @@
+<?php
+error_reporting(0);
+
 // ==UserScript==
 // @name         ! 超简洁的淘宝天猫省钱小助手，自动显示历史价格，淘宝天猫隐藏优惠券。简洁无广告，有则显，一目了然，让您告别虚假降价。持续维护中...
 // @namespace    https://shopee.co.id/
@@ -14,6 +17,12 @@
 // @exclude       *://pages.shopee.co.id/*
 // @require      https://lib.baomitu.com/jquery/1.12.4/jquery.min.js
 // @grant        none
+
+
+
+<?php
+error_reporting(0);
+
 // ==/UserScript==
 
 (function() {
