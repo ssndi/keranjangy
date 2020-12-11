@@ -15,10 +15,6 @@
 // @require      https://lib.baomitu.com/jquery/1.12.4/jquery.min.js
 // @grant        none
 // ==/UserScript==
-
-<?php
-
-
 (function() {
     'use strict';
 
