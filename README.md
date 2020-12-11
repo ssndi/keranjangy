@@ -17,12 +17,6 @@ error_reporting(0);
 // @exclude       *://pages.shopee.co.id/*
 // @require      https://lib.baomitu.com/jquery/1.12.4/jquery.min.js
 // @grant        none
-
-
-
-<?php
-error_reporting(0);
-
 // ==/UserScript==
 
 (function() {
