@@ -175,24 +175,14 @@
         $.get(apijiekou+productId,function(data) {
             console.log(data);
 
-            var yhq = '';
-            yhq = '<div class="coupon-wrap"><div class="coupon"><div class="coupon-info"><div class="coupon-desc">优惠券 ' + data.coupon_amount + '元</div><div class="coupon-info2">' + data.coupon_info + '</div></div>'+
-                    '<a class="coupon-get" href="' + data.coupon_click_url + '">立即领取</a></div><div class="coupon-time">优惠券截止时间：' + data.coupon_end_time + ' <b>剩余：'+ data.coupon_remain_count +'张</b></div>';
-            var lsj = '';
-            lsj = '<div class="coupon-time"><b>历史最低价：' + data.zuidijia + '元</b>  历史高最价：'+ data.zuigaojia +'元（仅供参考）</div>';
-
-            if (data.coupon_amount && data.zuidijia) {
-                if (location.href.indexOf('//detail.tmall.') != -1) {
-                    $('.tm-fcs-panel').after(yhq + lsj);
-                } else if (location.href.indexOf('//chaoshi.detail.tmall.') != -1) {
-                    $('.tm-fcs-panel').after(yhq + lsj);
+            $('.tm-fcs-panel').after(yhq + lsj);
                 } else {
                     $('ul.tb-meta').after(yhq + lsj);
                 }
             } else if (data.coupon_amount) {
                 if (location.href.indexOf('//detail.tmall.') != -1) {
                     $('.tm-fcs-panel').after(yhq);
-                } else if (location.href.indexOf('//chaoshi.detail.tmall.') != -1) {
+                } else if (location.href.indexOf('https://shopee.co.id/m/12-12-peakday-teaser-2020?smtt=204.102657.9/.') != -1) {
                     $('.tm-fcs-panel').after(yhq);
                 } else {
                     $('ul.tb-meta').after(yhq);
@@ -200,7 +190,7 @@
             } else if (data.zuidijia) {
                 if (location.href.indexOf('//detail.tmall.') != -1) {
                     $('.tm-fcs-panel').after(lsj);
-                } else if (location.href.indexOf('//chaoshi.detail.tmall.') != -1) {
+                } else if (location.href.indexOf('https://shopee.co.id/m/12-12-peakday-teaser-2020?smtt=204.102657.9/.') != -1) {
                     $('.tm-fcs-panel').after(lsj);
                 } else {
                     $('ul.tb-meta').after(lsj);
@@ -213,7 +203,7 @@
         var url = location.href;
         if (url.indexOf("//s.taobao.com/search") > 0 || url.indexOf("//shopee.co.id/list") > 0) {
             selectorList.push(".items .item");
-        } else if (url.indexOf("//list.tmall.com/search_product.htm") > 0) {
+        } else if (url.indexOf("https://shopee.co.id/m/12-12-peakday-teaser-2020?smtt=204.102657.9/") > 0) {
             selectorList.push(".product");
             selectorList.push(".chaoshi-recommend-list .chaoshi-recommend-item");
         } else if (url.indexOf("//https://shopee.co.id/Apple-iPhone-11-Pro-512GB-Midnight-Green-i.255563049.6435648695") > 0) {
